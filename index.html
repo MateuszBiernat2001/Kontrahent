@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="inputs-container">
+      <form id="form" class="form">
+      <input type="text" class="name" placeholder="Imię" >
+      <h6 class="nameTextError error"></h6>
+      <input type="text" class="surname" placeholder="Nazwisko" >
+      <h6 class="surnameTextError error"></h6>
+      <select id="type" >
+        <option>Osoba</option>
+        <option>Firma</option>
+      </select>
+      <h6 class="typeTextError error"></h6>
+      <input type="number" class="idNumber" placeholder="Pesel">
+      <h6 class="idTextError error"></h6>
+      <h6 class="idTextBlankError error"></h6>
+      <input type="file" accept="image/JPEG" class="imgInput" id="file">
+      <h6 class="imgTextError error"></h6>
+      <input type="submit" value="Dodaj Kontrahenta" class="add-btn"/>
+    </form>
+    </div>
+    <div class="bgc-image-container">
+      <img src="https://cdn.pixabay.com/photo/2019/07/08/04/23/traveling-4323759_960_720.png" alt="City">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

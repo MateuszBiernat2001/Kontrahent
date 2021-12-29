@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+.error{
+  margin-top: 5px;
+  color: red;
+}
+.form-container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.inputs-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  border: 8px solid #4CAF50;
+}
+.bgc-image-container{
+  height: 100%;
+  width: 40%;
+}
+img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+input, select{
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid #757575;
+}
+select{
+  color: #5e5b5b;
+}
+.add-btn{
+  padding: 10px 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 80px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.add-btn:hover,.add-btn:active,.add-btn:focus {
+  background: #43A047;
+}
+
+@media (max-width: 1200px) {
+  .inputs-container{
+    width: 100%;
+  }
+  .bgc-image-container{
+    display: none;
+  }
+}
